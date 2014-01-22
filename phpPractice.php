@@ -14,7 +14,7 @@
 	
 	// save the new array to a file...
 	// open the file
-	$fileObject = fopen('names.json', 'w');
+	$fileObject = fopen('ainc.json', 'w');
 	// write our data (in JSON format) to the file
 	fwrite($fileObject, json_encode($namesArray));
 	// close the file object when we are done with it to avoid any possible memory leaks
