@@ -1,14 +1,14 @@
 <?php
 
 // get the name from the $_POST array ($_POST array is what is submitted behind the scenes from our javascript)
-	$name = $_POST['name'];
+	$name = $_POST['ainc'];
 	// path to the file (in this same directory)
 	$jsonFile = "ainc.json";
 	// PHP command for "reading" the file
 	$jsonData = file_get_contents($jsonFile);
 	// parses the $jsonData variable into an object (in this case, an array - or list)
 	$namesArray = json_decode($jsonData, TRUE);
-	
+	echo $jsonFile;
 	// if not, add it to the array
 	array_push($namesArray, $name);
 	
